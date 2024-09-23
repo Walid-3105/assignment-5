@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog FAQ Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!-- Lexend goggle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="lexend-font">
+    <header class="mb-10">
+      <!-- Nav Bar start here -->
+      <div class="bg-[#fff7e8] bg-opacity-70">
+        <nav class="mx-24">
+          <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <!-- <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                  >
+                    <li><a>Item 1</a></li>
+                    <li>
+                      <a>Parent</a>
+                      <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul> -->
+              </div>
+              <button
+                id="btn-home"
+                class="btn btn-ghost btn-bg-parrot text-xl w-[110px] font-semibold"
+              >
+                Home
+              </button>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="flex items-center gap-2 text-xl font-semibold">
+                <img src="assets/logo.png" alt="" />
+                <h5>Donate Bangladesh</h5>
+              </div>
+            </div>
+            <div class="navbar-end flex gap-1">
+              <div class="text-xl flex gap-2 font-bold opacity-70">
+                <img class="w-6 h-6 my-auto" src="assets/coin.png" alt="" />
+                <div id="main-balance">5500</div>
+                <span>BDT</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="px-14">
+      <div>
+        <p class="font-extrabold text-3xl mb-8">Important FAQ</p>
+      </div>
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document
+        .getElementById("btn-home")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.location.href = "./index.html";
+        });
+    </script>
+  </body>
+</html>

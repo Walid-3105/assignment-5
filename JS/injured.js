@@ -16,9 +16,23 @@ document
       document.getElementById("main-balance").innerText = mainNewBalance3;
       document.getElementById("injured-donate-balance").innerText =
         injuredNewBalance;
+
+      // transaction section
+      const div = document.createElement("div");
+      div.style.border = "1px solid rgba(17, 17, 17, 0.1)";
+      div.style.padding = "24px";
+      div.style.borderRadius = "12px";
+      div.innerHTML = `
+      <p>${addBalance3} Taka is Donated for Injured in Quota Movement, Bangladesh</p>
+      `;
+      document.getElementById("transaction-container").appendChild(div);
+
+      document.getElementById("my_modal_7").showModal();
     } else {
-      alert("You don't have sufficient Balance ");
-      document.getElementById("my_modal_7").classList.add("hidden");
+      alert("Invalid Donation Amount");
+      if (document.getElementById("my_modal_7").open) {
+        document.getElementById("my_modal_7").close();
+      }
     }
   });
 

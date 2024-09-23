@@ -10,6 +10,7 @@ function getTextFieldValueById(id) {
   return textNumber;
 }
 
+// function for show and hide section
 function showSectionById(id) {
   document.getElementById("donate-section").classList.add("hidden");
   document.getElementById("history-section").classList.add("hidden");
@@ -17,10 +18,10 @@ function showSectionById(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
-// close Modal function
-document
-  .getElementById("close-modal")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    document.getElementById("my_modal_5").close();
-  });
+// function for select button color change
+function selectButtonColorChange(id) {
+  document.getElementById("donate-btn").classList.remove("active");
+  document.getElementById("history-btn").classList.remove("active");
+
+  document.getElementById(id).classList.add("active");
+}

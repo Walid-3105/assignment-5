@@ -6,3 +6,6 @@
   font-family: "Lexend", sans-serif;
 }
 
+.btn.active {
+  background-color: #b4f461;
+}

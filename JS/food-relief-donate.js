@@ -13,9 +13,26 @@ document
 
       document.getElementById("main-balance").innerText = mainNewBalance2;
       document.getElementById("food-relief-balance").innerText = foodNewBalance;
+
+      // transaction section
+
+      const div = document.createElement("div");
+      div.style.border = "1px solid rgba(17, 17, 17, 0.1)";
+      div.style.padding = "24px";
+      div.style.borderRadius = "12px";
+      div.innerHTML = `
+      <p>${addBalance2} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
+      
+      `;
+
+      document.getElementById("transaction-container").appendChild(div);
+
+      document.getElementById("my_modal_6").showModal();
     } else {
-      alert("You don't have sufficient Balance ");
-      document.getElementById("my_modal_6").classList.add("hidden");
+      alert("Invalid Donation Amount");
+      if (document.getElementById("my_modal_6").open) {
+        document.getElementById("my_modal_6").close();
+      }
     }
   });
 
