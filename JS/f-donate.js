@@ -1,3 +1,4 @@
+// flood donate section
 document
   .getElementById("btn-flood-donate")
   .addEventListener("click", function (event) {
