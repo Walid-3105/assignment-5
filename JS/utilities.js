@@ -16,3 +16,11 @@ function showSectionById(id) {
 
   document.getElementById(id).classList.remove("hidden");
 }
+
+// close Modal function
+document
+  .getElementById("close-modal")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("my_modal_5").close();
+  });

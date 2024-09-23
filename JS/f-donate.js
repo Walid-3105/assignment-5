@@ -8,15 +8,28 @@ document
     const fDonateBalance = getTextFieldValueById("flood-donate-balance");
     const mainBalance = getTextFieldValueById("main-balance");
 
-    if (mainBalance >= addBalance) {
+    if (mainBalance >= addBalance && addBalance > 0) {
       const mainNewBalance = mainBalance - addBalance;
       const fNewBalance = fDonateBalance + addBalance;
 
       document.getElementById("main-balance").innerText = mainNewBalance;
       document.getElementById("flood-donate-balance").innerText = fNewBalance;
+      const div = document.createElement("div");
+
+      // transaction section
+      div.style.border = "1px solid rgba(17, 17, 17, 0.1)";
+      div.innerHTML = `
+      <p>${addBalance} Taka is Donated for Flood Donate for Flood at Noakhali, Bangladesh</p>
+      `;
+      document.getElementById("transaction-container").appendChild(div);
+
+      document.getElementById("my_modal_5").showModal();
     } else {
       alert("You don't have sufficient Balance ");
-      document.getElementById("my_modal_5").classList.add("hidden");
+
+      if (document.getElementById("my_modal_5").open) {
+        document.getElementById("my_modal_5").close();
+      }
     }
   });
 
