@@ -19,8 +19,8 @@ document
       div.style.padding = "24px";
       div.style.borderRadius = "12px";
       div.innerHTML = `
-      <p>${addBalance2} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
-      <p>Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()} GMT + 0600(Bangladesh Standard Time)</p>
+      <p class="mb-1">${addBalance2} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
+      <p class="bg-[#1111110D]">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()} GMT + 0600(Bangladesh Standard Time)</p>
       `;
 
       document.getElementById("transaction-container").appendChild(div);

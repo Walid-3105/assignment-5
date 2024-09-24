@@ -23,8 +23,8 @@ document
       div.style.padding = "24px";
       div.style.borderRadius = "12px";
       div.innerHTML = `
-      <p>${addBalance3} Taka is Donated for Injured in Quota Movement, Bangladesh</p>
-      <p>Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()} GMT + 0600(Bangladesh Standard Time)</p>
+      <p class="mb-1">${addBalance3} Taka is Donated for Injured in Quota Movement, Bangladesh</p>
+      <p class="bg-[#1111110D]">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()} GMT + 0600(Bangladesh Standard Time)</p>
       `;
       document.getElementById("transaction-container").appendChild(div);
       // transaction section ends here
