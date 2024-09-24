@@ -41,41 +41,9 @@
     >
       <!-- Nav Bar start here -->
       <div class="bg-[#fff7e8] bg-opacity-70">
-        <nav class="mx-24">
+        <nav class="lg:mx-24 mx-3">
           <div class="navbar">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </div>
-                <!-- <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-                  >
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <a>Parent</a>
-                      <ul class="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                      </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul> -->
-              </div>
               <button
                 id="btn-blog"
                 class="btn btn-ghost btn-bg-parrot text-xl w-[110px] font-semibold"
@@ -83,10 +51,10 @@
                 <a href="./blog.html">Blog</a>
               </button>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center lg:flex">
               <div class="flex items-center gap-2 text-xl font-semibold">
                 <img src="assets/logo.png" alt="" />
-                <h5>Donate Bangladesh</h5>
+                <h5 class="hidden lg:block">Donate Bangladesh</h5>
               </div>
             </div>
             <div class="navbar-end flex gap-1">
@@ -99,19 +67,23 @@
           </div>
         </nav>
       </div>
-      <div class="flex justify-center gap-4 mb-3 mt-8 text-xl font-semibold">
-        <button id="donate-btn" class="btn btn-lg w-40">Donate</button>
-        <button id="history-btn" class="btn btn-lg w-40">History</button>
+      <div
+        class="flex justify-center gap-4 mb-3 lg:mt-8 mt-6 lg:text-xl text-base font-semibold"
+      >
+        <button id="donate-btn" class="btn btn-lg lg:w-40 w-28">Donate</button>
+        <button id="history-btn" class="btn btn-lg lg:w-40 w-28">
+          History
+        </button>
       </div>
       <!-- Nav Bar ends here -->
     </header>
-    <main class="mx-28 mb-24 mt-48">
+    <main class="lg:mx-28 mx-5 mb-24 mt-48">
       <div id="donate-section" class="space-y-5">
         <!-- Card - 1  -->
         <div>
           <div class="hero rounded-2xl border border-[#e1dfdf]">
-            <div class="hero-content flex-col lg:flex-row p-6">
-              <div class="w-1/2">
+            <div class="hero-content flex-col lg:flex-row lg:p-6 p-5">
+              <div class="lg:w-1/2 w-fit">
                 <img
                   src="assets/noakhali.png"
                   class="rounded-lg shadow-2xl"
@@ -119,7 +91,7 @@
                 />
               </div>
 
-              <div class="w-1/2">
+              <div class="lg:w-1/2 w-fit">
                 <div class="stats shadow bg-[#1111110D] rounded-lg mb-3">
                   <div class="stat h-[44px] py-[10px] px-4">
                     <div class="stat-value text-base flex gap-1">
@@ -173,12 +145,9 @@
                 >
                   Donate Now
                 </button>
-                <dialog
-                  id="my_modal_5"
-                  class="modal modal-bottom sm:modal-middle"
-                >
-                  <div class="modal-box text-center">
-                    <h3 class="pb-4 text-2xl font-bold">Congrats!</h3>
+                <dialog id="my_modal_5" class="modal lg:modal-middle">
+                  <div class="modal-box text-center lg:p-6 p-4 lg:w-full w-96">
+                    <h3 class="pb-4 text-2xl font-bold">Congrates!</h3>
                     <img class="mx-auto" src="assets/coin.png" alt="" />
                     <p class="py-4 text-sm">You Have Donated for Humankind</p>
                     <p class="text-base font-bold">Successfully</p>
@@ -200,15 +169,15 @@
         <!-- Card - 2  -->
         <div>
           <div class="hero rounded-2xl border border-[#e1dfdf]">
-            <div class="hero-content flex-col lg:flex-row p-6">
-              <div class="w-1/2">
+            <div class="hero-content flex-col lg:flex-row lg:p-6 p-5">
+              <div class="lg:w-1/2 w-fit">
                 <img
                   src="assets/feni.png"
                   class="rounded-lg shadow-2xl"
                   alt="Images of Feni"
                 />
               </div>
-              <div class="w-1/2">
+              <div class="lg:w-1/2 w-fit">
                 <div class="stats shadow bg-[#1111110D] rounded-lg mb-3">
                   <div class="stat h-[44px] py-[10px] px-4">
                     <div class="stat-value text-base flex gap-1">
@@ -264,12 +233,9 @@
                 >
                   Donate Now
                 </button>
-                <dialog
-                  id="my_modal_6"
-                  class="modal modal-bottom sm:modal-middle"
-                >
-                  <div class="modal-box text-center">
-                    <h3 class="pb-4 text-2xl font-bold">Congrats!</h3>
+                <dialog id="my_modal_6" class="modal lg:modal-middle">
+                  <div class="modal-box text-center lg:p-6 p-4 lg:w-full w-96">
+                    <h3 class="pb-4 text-2xl font-bold">Congrates!</h3>
                     <img class="mx-auto" src="assets/coin.png" alt="" />
                     <p class="py-4 text-sm">You Have Donated for Humankind</p>
                     <p class="text-base font-bold">Successfully</p>
@@ -291,15 +257,15 @@
         <!-- Card - 3  -->
         <div>
           <div class="hero rounded-2xl border border-[#e1dfdf]">
-            <div class="hero-content flex-col lg:flex-row p-6">
-              <div class="w-1/2">
+            <div class="hero-content flex-col lg:flex-row lg:p-6 p-5">
+              <div class="lg:w-1/2 w-fit">
                 <img
                   src="assets/quota-protest.png"
                   class="rounded-lg shadow-2xl"
                   alt="Images of Quota Protest"
                 />
               </div>
-              <div class="w-1/2">
+              <div class="lg:w-1/2 w-fit">
                 <div class="stats shadow bg-[#1111110D] rounded-lg mb-3">
                   <div class="stat h-[44px] py-[10px] px-4">
                     <div class="stat-value text-base flex gap-1">
@@ -356,12 +322,9 @@
                 >
                   Donate Now
                 </button>
-                <dialog
-                  id="my_modal_7"
-                  class="modal modal-bottom sm:modal-middle"
-                >
-                  <div class="modal-box text-center">
-                    <h3 class="pb-4 text-2xl font-bold">Congrats!</h3>
+                <dialog id="my_modal_7" class="modal lg:modal-middle">
+                  <div class="modal-box text-center lg:p-6 p-4 lg:w-full w-96">
+                    <h3 class="pb-4 text-2xl font-bold">Congrates!</h3>
                     <img class="mx-auto" src="assets/coin.png" alt="" />
                     <p class="py-4 text-sm">You Have Donated for Humankind</p>
                     <p class="text-base font-bold">Successfully</p>
