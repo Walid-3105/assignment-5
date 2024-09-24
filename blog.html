@@ -10,7 +10,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="CSS/styles.css" />
+
     <!-- Lexend goggle font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +19,16 @@
       rel="stylesheet"
     />
     <style>
+      .btn-bg-parrot {
+        background-color: #b4f461;
+      }
+
       .lexend-font {
         font-family: "Lexend", sans-serif;
+      }
+
+      .btn.active {
+        background-color: #b4f461;
       }
     </style>
   </head>
@@ -77,7 +85,7 @@
               </div>
             </div>
             <div class="navbar-end flex gap-1">
-              <div class="text-xl flex gap-2 font-bold opacity-70">
+              <div class="text-xl flex gap-2 font-medium opacity-70">
                 <img class="w-6 h-6 my-auto" src="assets/coin.png" alt="" />
                 <div id="main-balance">5500</div>
                 <span>BDT</span>

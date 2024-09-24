@@ -8,11 +8,6 @@ document
     const fDonateBalance = getTextFieldValueById("flood-donate-balance");
     const mainBalance = getTextFieldValueById("main-balance");
 
-    if (isNaN(addBalance)) {
-      alert("Give a valid Amount");
-      return;
-    }
-
     if (mainBalance >= addBalance && addBalance > 0) {
       const mainNewBalance = mainBalance - addBalance;
       const fNewBalance = fDonateBalance + addBalance;
@@ -27,9 +22,11 @@ document
       div.style.borderRadius = "12px";
       div.innerHTML = `
       <p>${addBalance} Taka is Donated for Flood at Noakhali, Bangladesh</p>
+      <p>Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()} GMT + 0600(Bangladesh Standard Time)</p>
       `;
       document.getElementById("transaction-container").appendChild(div);
-
+      // transaction section ends here
+      // Modal show if donate successfully
       document.getElementById("my_modal_5").showModal();
     } else {
       alert("Invalid Donation Amount");
