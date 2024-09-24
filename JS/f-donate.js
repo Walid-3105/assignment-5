@@ -61,9 +61,9 @@ document.getElementById("history-btn").addEventListener("click", function () {
 document.getElementById("donate-btn").classList.add("active");
 
 // Home to Blog Page----------
-document.getElementById("btn-blog").addEventListener("click", function (event) {
-  event.preventDefault();
-  window.location.href = "/blog.html";
-});
+// document.getElementById("btn-blog").addEventListener("click", function (event) {
+//   event.preventDefault();
+//   window.location.href = "/blog.html";
+// });
 
 // Blog to Home Page -----------
